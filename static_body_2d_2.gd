@@ -13,7 +13,6 @@ func _ready() -> void:
 		constant_linear_velocity.x = -50
 		tween2.tween_property(get_node("/root/Node2D/StaticBody2D2"), "position", Vector2(300, 0), 1)
 		await get_tree().create_timer(1).timeout
-		print("hi")
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
